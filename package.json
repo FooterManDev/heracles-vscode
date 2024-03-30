@@ -1,8 +1,15 @@
 {
   "name": "heracles-support",
   "displayName": "Heracles Support",
-  "description": "Adds Intellisense for Heracles Quest JSON.",
+  "description": "Provides Intellisense for Heracles Quest JSON.",
   "version": "0.0.1",
+  "author": {
+    "name": "FooterMan",
+    "url": "https://github.com/FooterManDev"
+  },
+  "repository": {
+    "url": "https://github.com/FooterManDev/heracles-vscode"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -16,12 +23,6 @@
       {
         "fileMatch": ["**/heracles/quests/*.json"],
         "url": "./schema.json"
-      }
-    ],
-    "commands": [
-      {
-        "command": "heracles-support.helloWorld",
-        "title": "Hello World"
       }
     ]
   },
