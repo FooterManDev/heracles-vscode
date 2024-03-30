@@ -10,6 +10,7 @@
   "repository": {
     "url": "https://github.com/FooterManDev/heracles-vscode"
   },
+  "icon": "./icon.png",
   "engines": {
     "vscode": "^1.87.0"
   },
