@@ -1,8 +1,8 @@
 {
   "name": "heracles-support",
   "displayName": "Heracles Support",
-  "description": "Provides Intellisense for Heracles Quest JSON.",
-  "version": "1.0.0",
+  "description": "Provides Schema checking for Heracles Quest JSON.",
+  "version": "1.0.1",
   "author": {
     "name": "FooterMan",
     "url": "https://github.com/FooterManDev"
@@ -21,10 +21,24 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "languages": [
+      {
+        "id": "json",
+        "aliases": ["JSON"],
+        "extensions": [
+          ".json",
+          ".mcmeta"
+        ]
+      }
+    ],
     "jsonValidation": [
       {
         "fileMatch": ["**/heracles/quests/*.json"],
-        "url": "./schema.json"
+        "url": "./heracles.json"
+      },
+      {
+        "fileMatch": "**/quest_backgrounds/*.mcmeta",
+        "url": "./quest_bg_meta.json"
       }
     ]
   },

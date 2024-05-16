@@ -1,3 +1,3 @@
 # Change Log
 
-- Initial Release
+- Added Schema for quest background `.mcmeta` files.

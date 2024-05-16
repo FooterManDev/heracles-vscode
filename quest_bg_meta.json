@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "heracles:texture_placement": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "xOffset": {
+          "type": "integer"
+        },
+        "yOffset": {
+          "type": "integer"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "required": ["heracles:texture_placement"]
+}
